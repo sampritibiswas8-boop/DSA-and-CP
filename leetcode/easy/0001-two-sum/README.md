@@ -52,29 +52,29 @@ Output: [0,1]
 
 ## Solution
 
-**Language:** unknown  
-**Runtime:** N/A  
-**Memory:** N/A  
-**Submitted:** 2026-07-05T13:58:16.811Z  
+**Language:** Java  
+**Runtime:** 2 ms (beats 99.34%)  
+**Memory:** 47.2 MB (beats 23.00%)  
+**Submitted:** 2026-07-05T13:58:32.108Z  
 
-```unknown
-1class Solution {
-2    public int[] twoSum(int[] nums, int target) {
-3        Map<Integer, Integer> map = new HashMap<>();
-4
-5        for (int i = 0; i < nums.length; i++) {
-6            int complement = target - nums[i];
-7
-8            if (map.containsKey(complement)) {
-9                return new int[] { map.get(complement), i };
-10            }
-11
-12            map.put(nums[i], i);
-13        }
-14
-15        return new int[] {};
-16    }
-17}
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+
+            map.put(nums[i], i);
+        }
+
+        return new int[] {};
+    }
+}
 ```
 
 ---
