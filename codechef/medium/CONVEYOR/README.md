@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T14:50:48.458Z  
+**Submitted:** 2026-07-15T15:06:38.847Z  
 
 ```java
 import java.util.*;
@@ -83,14 +83,16 @@ class Codechef
 		    
 		    int l = 0;
 		    for(int i = 0;i<p-1;i++){
-		        if(s.charAt(i)=='R')
+		        if(s.charAt(i)=='R'){
 		        l++;
+		        }
 		    }
 		
 		    int r =0;
 		    for(int i = p;i<n;i++){
-		        if(s.charAt(i)=='L')
+		        if(s.charAt(i)=='L'){
 		        r++;
+		        }
 		    }
 		    System.out.println(Math.min(l,r));
 		}
