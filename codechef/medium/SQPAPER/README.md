@@ -57,7 +57,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T14:34:53.736Z  
+**Submitted:** 2026-07-15T14:36:26.821Z  
 
 ```java
 import java.util.*;
@@ -69,6 +69,12 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int s= Math.min(a,b);
+		System.out.println(s*s);
 
 	}
 }
