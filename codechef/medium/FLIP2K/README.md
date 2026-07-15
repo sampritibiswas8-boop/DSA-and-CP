@@ -72,12 +72,12 @@ It's impossible to even modify the given string since it only contains one $0$. 
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:02:34.893Z  
+**Submitted:** 2026-07-15T15:04:45.406Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
