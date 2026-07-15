@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T14:46:47.369Z  
+**Submitted:** 2026-07-15T14:48:54.243Z  
 
 ```java
 import java.util.*;
@@ -86,6 +86,7 @@ class Codechef
 		        if(s.charAt(i)=='R')
 		        l++;
 		    }
+		
 		    int r =0;
 		    for(int i = p;i<n;i++){
 		        if(s.charAt(i)=='L')
