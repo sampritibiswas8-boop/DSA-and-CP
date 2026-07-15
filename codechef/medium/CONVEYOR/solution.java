@@ -19,6 +19,7 @@ class Codechef
 		        if(s.charAt(i)=='R')
 		        l++;
 		    }
+		
 		    int r =0;
 		    for(int i = p;i<n;i++){
 		        if(s.charAt(i)=='L')
