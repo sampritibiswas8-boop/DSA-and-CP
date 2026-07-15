@@ -75,7 +75,7 @@ It's impossible to even modify the given string since it only contains one $0$. 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:04:45.406Z  
+**Submitted:** 2026-07-15T15:04:50.406Z  
 
 ```cpp
 import java.util.*;
