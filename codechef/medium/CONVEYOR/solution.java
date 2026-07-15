@@ -15,12 +15,12 @@ class Codechef
 		    String s = sc.next();
 		    
 		    int l = 0;
-		    for(int i = p-1;i>=0;i++){
+		    for(int i = 0;i<p-1;i++){
 		        if(s.charAt(i)=='R')
 		        l++;
 		    }
 		    int r =0;
-		    for(int i = p-1;i<n;i++){
+		    for(int i = p;i<n;i++){
 		        if(s.charAt(i)=='L')
 		        r++;
 		    }
