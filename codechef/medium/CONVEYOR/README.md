@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T14:45:46.462Z  
+**Submitted:** 2026-07-15T14:46:47.369Z  
 
 ```java
 import java.util.*;
@@ -82,12 +82,12 @@ class Codechef
 		    String s = sc.next();
 		    
 		    int l = 0;
-		    for(int i = p-1;i>=0;i++){
+		    for(int i = 0;i<p-1;i++){
 		        if(s.charAt(i)=='R')
 		        l++;
 		    }
 		    int r =0;
-		    for(int i = p-1;i<n;i++){
+		    for(int i = p;i<n;i++){
 		        if(s.charAt(i)=='L')
 		        r++;
 		    }
