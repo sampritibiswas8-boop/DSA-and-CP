@@ -47,39 +47,37 @@ Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 98.35%)  
-**Memory:** 47.4 MB (beats 81.17%)  
-**Submitted:** 2026-07-21T15:42:38.794Z  
+**Memory:** 47.7 MB (beats 25.67%)  
+**Submitted:** 2026-07-21T16:10:00.279Z  
 
 ```java
 class Solution {
-   
     public void setZeroes(int[][] matrix) {
-       
+
         int m = matrix.length;
         int n = matrix[0].length;
 
-        
-        boolean firstRowZero = false;
-        
-        boolean firstColZero = false;
+        boolean firstrowzero = false;
+        boolean firstcolzero = false;
 
-       
-        for (int j = 0; j < n; j++) {
-            if (matrix[0][j] == 0) {
-                firstRowZero = true;
-                break;
+        
+            for (int j = 0; j < n; j++) {
+                if (matrix[0][j] == 0) {
+                    firstrowzero = true;
+                    break;
+                }
             }
-        }
-
-       
-        for (int i = 0; i < m; i++) {
-            if (matrix[i][0] == 0) {
-                firstColZero = true;
-                break;
-            }
-        }
+        
 
         
+            for (int i = 0; i < m; i++) {
+                if (matrix[i][0] == 0) {
+                    firstcolzero = true;
+                    break;
+                }
+            }
+        
+
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
                 if (matrix[i][j] == 0) {
@@ -89,28 +87,26 @@ class Solution {
             }
         }
 
-       
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
-                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                if ((matrix[i][0] == 0) || (matrix[0][j] == 0)) {
                     matrix[i][j] = 0;
                 }
             }
         }
 
-     
-        if (firstRowZero) {
+        if (firstrowzero) {
             for (int j = 0; j < n; j++) {
                 matrix[0][j] = 0;
             }
         }
 
-      
-        if (firstColZero) {
+        if (firstcolzero) {
             for (int i = 0; i < m; i++) {
                 matrix[i][0] = 0;
             }
         }
+
     }
 }
 ```
