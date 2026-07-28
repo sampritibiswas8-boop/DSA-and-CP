@@ -39,9 +39,9 @@ Explanation: There is 1 choose 1 = 1 total combination.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 13 ms (beats 99.16%)  
-**Memory:** 97.8 MB (beats 92.78%)  
-**Submitted:** 2026-07-20T16:14:47.801Z  
+**Runtime:** 17 ms (beats 84.99%)  
+**Memory:** 98.1 MB (beats 27.41%)  
+**Submitted:** 2026-07-28T18:51:24.402Z  
 
 ```java
 class Solution {
