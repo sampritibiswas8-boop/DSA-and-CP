@@ -15,16 +15,20 @@ class Solution {
 
         int[][] t = new int[n + 1][target + 1];
 
-        for(int i = 0;i<n+1;i++){
+        for(int i = 1;i<n+1;i++){
             t[i][0]=1;
         }
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 0; i < n + 1; i++) {
             for (int j = 0; j < target + 1; j++) {
-            
-                if (nums[i - 1] <= j)
+                if(i==0) t[i][j] = 0;
+                if(j==0) t[i][j] =1;
+                if(i>0) {
+                   if (nums[i - 1] <= j)
                     t[i][j] = t[i - 1][j] + t[i - 1][j - nums[i - 1]];
-                else
+                  else
                     t[i][j] = t[i - 1][j];
+                }
+                
             }
         }
         return t[n][target];
