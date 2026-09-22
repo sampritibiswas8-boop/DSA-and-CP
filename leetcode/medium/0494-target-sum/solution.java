@@ -1,0 +1,32 @@
+class Solution {
+    public int findTargetSumWays(int[] nums, int diff) {
+        int n = nums.length;
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+        }
+
+        if (Math.abs(diff) > sum)
+            return 0;
+        if ((diff + sum) % 2 != 0)
+            return 0;
+
+        int target = (diff + sum) / 2;
+
+        int[][] t = new int[n + 1][target + 1];
+
+        for(int i = 0;i<n+1;i++){
+            t[i][0]=1;
+        }
+        for (int i = 1; i < n + 1; i++) {
+            for (int j = 0; j < target + 1; j++) {
+            
+                if (nums[i - 1] <= j)
+                    t[i][j] = t[i - 1][j] + t[i - 1][j - nums[i - 1]];
+                else
+                    t[i][j] = t[i - 1][j];
+            }
+        }
+        return t[n][target];
+    }
+}
